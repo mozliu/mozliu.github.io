@@ -3,8 +3,8 @@
 - name: About
   link: /about.html
 - name: Science
-  link: /science.html
+  link: /science/
 - name: Comics
-  link: /comics.html
+  link: /comics/
 - name: Flygirl
-  link: /flygirl.html
+  link: /comics/flygirl.html
