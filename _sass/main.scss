@@ -6,7 +6,11 @@ $color-accent:#4346df;
 $color-main:#131512;
 $color-highlight:#e8a25d;
 
-
+%text-centered {
+	max-width:750px;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 body {
   background-color: #fff;
@@ -20,10 +24,7 @@ div.content {
 	padding-bottom:50px;
 	margin-left:$sidebar-width;
 	p {
-		max-width:750px;
-		margin-left:auto;
-		margin-right:auto;
-		padding-bottom:5px;
+		@extend %text-centered
 	}
 	img {
 		display: block;
@@ -34,17 +35,31 @@ div.content {
 		margin-right:auto;
 		padding-bottom:5px;
 	}
+	h2 {
+		@extend %text-centered
+	}
 	h3 {
 		text-transform:uppercase;
-		max-width:750px;
-		margin-left:auto;
-		margin-right:auto;
-		padding-bottom:5px;
+		@extend %text-centered
+	}
+	h4 {
+		@extend %text-centered
 	}
 }
 
 div.flygirl {
 	font: 18px/1.25 $font-flygirl;
+}
+
+div.gallery {
+	padding-bottom:0px;
+	margin-left:$sidebar-width;
+	img {
+		display:inline-block;
+		max-width:32%;
+		vertical-align:middle;
+		height:auto;
+	}
 }
 
 .sidebar {

@@ -1,0 +1,28 @@
+- name: Flygirl
+  link: /comics/flygirl.html
+  imglink: /assets/images/preview/flygirl.png
+  desc: "Serialized trans girl space opera"
+- name: Satellite
+  link: /comics/satellite.html
+  imglink: /assets/images/preview/satellite.png
+  desc: "Nonbinary love letter"
+- name: Ants Winning Sex
+  link: /comics/wasmannia.html
+  imglink: /assets/images/preview/wasmannia.png
+  desc: "Bug science comic"
+- name: 17 Seconds
+  link: /comics/17s.html
+  imglink: /assets/images/preview/17s.png
+  desc: "Grieving someone I've never met"
+- name: The Goddess of Drought
+  link: /comics/goddess.html
+  imglink: /assets/images/preview/goddess.png
+  desc: "Love, abuse, terrible white writers, and what it means to go crazy"
+- name: This is What it's Like
+  link: /comics/tiwil.html
+  imglink: /assets/images/preview/tiwil.png
+  desc: "One, two, three years after an assault"
+- name: Prints
+  link: /comics/prints.html
+  imglink: /assets/images/preview/prints.png
+  desc: "Various prints and other one-shots"

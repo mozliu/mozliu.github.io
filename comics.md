@@ -1,6 +1,5 @@
 ---
-layout: comics
+layout: gallery
 title: Comics
+shortname: preview
 ---
-# Comics
-Hello world!

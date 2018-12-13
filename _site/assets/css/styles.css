@@ -1,3 +1,8 @@
+div.content p, div.content h2, div.content h3, div.content h4 {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto; }
+
 body {
   background-color: #fff;
   font: 14px/1.5 "Roboto Mono", monospace;
@@ -8,11 +13,6 @@ body {
 div.content {
   padding-bottom: 50px;
   margin-left: 200px; }
-  div.content p {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px; }
   div.content img {
     display: block;
     max-width: 100%;
@@ -22,14 +22,19 @@ div.content {
     margin-right: auto;
     padding-bottom: 5px; }
   div.content h3 {
-    text-transform: uppercase;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px; }
+    text-transform: uppercase; }
 
 div.flygirl {
   font: 18px/1.25 "EB Garamond", serif; }
+
+div.gallery {
+  padding-bottom: 0px;
+  margin-left: 200px; }
+  div.gallery img {
+    display: inline-block;
+    max-width: 32%;
+    vertical-align: middle;
+    height: auto; }
 
 .sidebar {
   float: left;
