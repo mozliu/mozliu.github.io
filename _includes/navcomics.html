@@ -1,6 +1,6 @@
 <nav class="sidebar">
-	<img src="/assets/images/c_header-2.png" alt="image" />
-	{% for item in site.data.navcomics %}
+	<a href="/comics"> <img src="/assets/images/c_header-2.png" alt="image" /> </a>
+	{% for item in site.data.preview %}
 		<a href="{{ item.link }}">
 			{% if page.url == item.link  %}<div style="color:#e8a25d">{% endif %}
 			{{ item.name | upcase }}
