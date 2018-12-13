@@ -2,5 +2,5 @@
 layout: default
 title: Science
 ---
-# Science page
-Hello world!
+<img src="/assets/images/s_splash.jpg" alt="under construction" />
+# Under construction!
