@@ -2,26 +2,45 @@ $font-body: 'Roboto', sans-serif;
 $font-header: 'Roboto Mono', monospace;
 $font-flygirl: 'EB Garamond', serif;
 $sidebar-width:200px;
+$color-accent:#4346df;
+$color-main:#131512;
+$color-highlight:#e8a25d;
 
-img {
-	max-width:100%;
-	height:auto;
-	vertical-align:middle;
-	padding-bottom:5px;
-}
+
 
 body {
   background-color: #fff;
-  font: 14px/1.5 $font-body;
-  color:#727272;
+  font: 14px/1.5 $font-header;
+  color:$color-main;
   font-weight:400;
   z-index:2;
 }
 
 div.content {
-	float:center;
 	padding-bottom:50px;
 	margin-left:$sidebar-width;
+	p {
+		max-width:750px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:5px;
+	}
+	img {
+		display: block;
+		max-width:100%;
+		height:auto;
+		vertical-align:middle;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:5px;
+	}
+	h3 {
+		text-transform:uppercase;
+		max-width:750px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:5px;
+	}
 }
 
 div.flygirl {
@@ -30,7 +49,7 @@ div.flygirl {
 
 .sidebar {
 	float:left;
-	font: 14px/1.5 $font-header;
+	font: 16px/1.1 $font-header;
 	height:100%;
 	width:$sidebar-width;
 	background-color:#fff;
@@ -38,12 +57,19 @@ div.flygirl {
 	overflow:auto;
 }
 
-.sidebar a {
-	display:block;
+
+a {
+	color:$color-accent;
 	text-decoration:none;
+	&:hover {
+		color:$color-highlight;
+	}
+	&:active {
+		color:$color-highlight;
+	}
 }
 
-.current {
-	color: green;
+.sidebar a {
+	display:block;
 }
 
