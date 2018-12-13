@@ -1,2 +1,36 @@
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  padding-bottom: 5px; }
+
+body {
+  background-color: #fff;
+  font: 14px/1.5 "Roboto", sans-serif;
+  color: #727272;
+  font-weight: 400;
+  z-index: 2; }
+
+div.content {
+  float: center;
+  padding-bottom: 50px;
+  margin-left: 200px; }
+
+div.flygirl {
+  font: 18px/1.25 "EB Garamond", serif; }
+
+.sidebar {
+  float: left;
+  font: 14px/1.5 "Roboto Mono", monospace;
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed;
+  overflow: auto; }
+
+.sidebar a {
+  display: block;
+  text-decoration: none; }
+
 .current {
   color: green; }

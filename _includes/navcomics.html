@@ -1,5 +1,5 @@
-<nav>
+<nav class="sidebar">
 	{% for item in site.data.navcomics %}
-	<a href="{{ item.link }}" {% if page.url == item.link  %}class="current"{% endif %}>{{ item.name }}</a>
+	<a href="{{ item.link }}" {% if page.url == item.link  %}class="current"{% endif %}>{{ item.name | upcase }}</a>
 	{% endfor %}
 </nav>

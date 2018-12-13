@@ -1,3 +1,49 @@
+$font-body: 'Roboto', sans-serif;
+$font-header: 'Roboto Mono', monospace;
+$font-flygirl: 'EB Garamond', serif;
+$sidebar-width:200px;
+
+img {
+	max-width:100%;
+	height:auto;
+	vertical-align:middle;
+	padding-bottom:5px;
+}
+
+body {
+  background-color: #fff;
+  font: 14px/1.5 $font-body;
+  color:#727272;
+  font-weight:400;
+  z-index:2;
+}
+
+div.content {
+	float:center;
+	padding-bottom:50px;
+	margin-left:$sidebar-width;
+}
+
+div.flygirl {
+	font: 18px/1.25 $font-flygirl;
+}
+
+.sidebar {
+	float:left;
+	font: 14px/1.5 $font-header;
+	height:100%;
+	width:$sidebar-width;
+	background-color:#fff;
+	position:fixed;
+	overflow:auto;
+}
+
+.sidebar a {
+	display:block;
+	text-decoration:none;
+}
+
 .current {
 	color: green;
 }
+
