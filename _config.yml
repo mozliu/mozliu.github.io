@@ -3,7 +3,3 @@ collections:
     output: true
   comics:
     output: true
-    sequential:
-      output: true
-    prints:
-      output: true

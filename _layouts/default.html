@@ -7,12 +7,6 @@
 	</head>
 	<body>
 		{{ content }}
-		{% if page.title in site.data.navcomics %}
-			{% include navcomics.html %}
-		{% elsif page.title in site.data.navscience %}
-			{% include navscience.html %}
-		{% else %}
-			{% include navigation.html %}
-		{% endif %}
+		{% include navscience.html %}
 	</body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: comics
 title: Comics
 ---
 # Comics

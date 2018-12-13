@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }} </title>
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+	<body>
+		{{ content }}
+		{% for image in site.static_files %}
+			{% if image.path contains page.shortname %}
+				<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			{% endif %}
+		{% endfor %}
+		{% include navcomics.html %}
+	</body>
+</html>
