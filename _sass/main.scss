@@ -12,6 +12,7 @@ $color-highlight:#e8a25d;
 	margin-right:auto;
 }
 
+/* global site parameters */
 body {
   background-color: #fff;
   font: 14px/1.5 $font-header;
@@ -19,8 +20,70 @@ body {
   font-weight:400;
   z-index:2;
 }
+a {
+	color:$color-accent;
+	text-decoration:none;
+	&:hover {
+		color:$color-highlight;
+	}
+	&:active {
+		color:$color-highlight;
+	}
+}
+footer {
+	float:left;
+	position:fixed;
+	left:5px;
+	bottom:0;
+	height:100px;
+	width:$sidebar-width;
+	ul {
+		list-style:none;
+		margin:0;
+		padding:0;
+		font: 16px/1.1 $font-header;
+	}
+}
 
-div.content {
+/* called in sidebar */
+.sidebar {
+	float:left;
+	font: 16px/1.1 $font-header;
+	height:50%;
+	width:$sidebar-width;
+	background-color:#fff;
+	position:fixed;
+	overflow:auto;
+	img {
+		vertical-align:top;
+		display:block;
+		padding-bottom:10px;
+	}
+	a {
+		display:block;
+	}
+}
+
+/* called in gallery layout */
+.row {
+	margin-left:$sidebar-width;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+	flex: 32%;
+	max-width: 32%;
+	padding: 0 4px;
+	img {
+		margin-top: 8px;
+		vertical-align: middle;
+		max-width:100%;
+	}
+}
+
+/* called in comics layout */
+.content {
 	padding-bottom:50px;
 	margin-left:$sidebar-width;
 	p {
@@ -47,29 +110,22 @@ div.content {
 	}
 }
 
-div.flygirl {
+/* called in blog layout */
+.flygirl {
 	font: 18px/1.25 $font-flygirl;
+	ul {
+		list-style:none;
+		margin-left:0;
+		padding-left:0;
+	}
+	li {
+		padding-bottom:10px;
+	}
+	h1 {
+		padding-bottom:0px;
+	}
 }
 
-.row {
-	margin-left:$sidebar-width;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-	flex: 32%;
-	max-width: 32%;
-	padding: 0 4px;
-}
-
-.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	max-width:100%;
-}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -78,38 +134,11 @@ div.flygirl {
 	max-width: 45%;
 	}
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - single column */
 @media screen and (max-width: 600px) {
 	.column {
 	flex: 100%;
 	max-width: 100%;
 	}
-}
-
-.sidebar {
-	float:left;
-	font: 16px/1.1 $font-header;
-	height:100%;
-	width:$sidebar-width;
-	background-color:#fff;
-	position:fixed;
-	overflow:auto;
-}
-
-
-a {
-	color:$color-accent;
-	text-decoration:none;
-	&:hover {
-		color:$color-highlight;
-	}
-	&:active {
-		color:$color-highlight;
-	}
-}
-
-.sidebar a {
-	display:block;
 }
 

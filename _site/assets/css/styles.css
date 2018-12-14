@@ -1,67 +1,15 @@
-div.content p, div.content h2, div.content h3, div.content h4 {
+.content p, .content h2, .content h3, .content h4 {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto; }
 
+/* global site parameters */
 body {
   background-color: #fff;
   font: 14px/1.5 "Roboto Mono", monospace;
   color: #131512;
   font-weight: 400;
   z-index: 2; }
-
-div.content {
-  padding-bottom: 50px;
-  margin-left: 200px; }
-  div.content img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px; }
-  div.content h3 {
-    text-transform: uppercase; }
-
-div.flygirl {
-  font: 18px/1.25 "EB Garamond", serif; }
-
-.row {
-  margin-left: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px; }
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 32%;
-  max-width: 32%;
-  padding: 0 4px; }
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  max-width: 100%; }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 45%;
-    max-width: 45%; } }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%; } }
-.sidebar {
-  float: left;
-  font: 16px/1.1 "Roboto Mono", monospace;
-  height: 100%;
-  width: 200px;
-  background-color: #fff;
-  position: fixed;
-  overflow: auto; }
 
 a {
   color: #4346df;
@@ -71,5 +19,85 @@ a {
   a:active {
     color: #e8a25d; }
 
-.sidebar a {
-  display: block; }
+footer {
+  float: left;
+  position: fixed;
+  left: 5px;
+  bottom: 0;
+  height: 100px;
+  width: 200px; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font: 16px/1.1 "Roboto Mono", monospace; }
+
+/* called in sidebar */
+.sidebar {
+  float: left;
+  font: 16px/1.1 "Roboto Mono", monospace;
+  height: 50%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed;
+  overflow: auto; }
+  .sidebar img {
+    vertical-align: top;
+    display: block;
+    padding-bottom: 10px; }
+  .sidebar a {
+    display: block; }
+
+/* called in gallery layout */
+.row {
+  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; }
+
+.column {
+  flex: 32%;
+  max-width: 32%;
+  padding: 0 4px; }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 100%; }
+
+/* called in comics layout */
+.content {
+  padding-bottom: 50px;
+  margin-left: 200px; }
+  .content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px; }
+  .content h3 {
+    text-transform: uppercase; }
+
+/* called in blog layout */
+.flygirl {
+  font: 18px/1.25 "EB Garamond", serif; }
+  .flygirl ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+  .flygirl li {
+    padding-bottom: 10px; }
+  .flygirl h1 {
+    padding-bottom: 0px; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 45%;
+    max-width: 45%; } }
+/* Responsive layout - single column */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%; } }
