@@ -1,5 +1,6 @@
 ---
 layout: comics
-title: Satellite
+title: Assorted one-shots
+shortname: prints
 ---
-A nonbinary love letter. Autobio, debuted in October 2018 at <a href="https://www.nyqzf.com/">NYQZF</a>. <a href="https://mozliu.bigcartel.com/product/17-seconds">Available as a 12pg zine.</a>
+Various one-shots, <a href="https://mozliu.bigcartel.com/product/prints-weird-lemons-void-all-we-see-is-years">some available here as risograph prints</a>.

@@ -10,7 +10,7 @@ title: Flygirl
 <p>Ongoing serialized illustrated short story, written by Caroline Kittredge Faustine and illustrated by Molly Liu, January 2016 to the present.</p>
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
