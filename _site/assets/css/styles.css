@@ -36,7 +36,7 @@ footer {
 .sidebar {
   float: left;
   font: 16px/1.1 "Roboto Mono", monospace;
-  height: 50%;
+  height: 75%;
   width: 200px;
   background-color: #fff;
   position: fixed;
