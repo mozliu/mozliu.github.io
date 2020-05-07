@@ -1,0 +1,68 @@
+<script src="https://use.fontawesome.com/57c399597b.js"></script>
+
+<!-- Sidebar/menu -->
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-xlarge w3-right w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()">PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()">ABOUT</a> 
+    <a href="#contact" onclick="w3_close()">CONTACT</a>
+  </div>
+</nav>
+
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-right w3-hide-large"></a>
+    <span class="w3-button w3-hide-large w3-large w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>My Portfolio</b></h1>
+    <!-- <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div> -->
+  </header>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<!-- w3 classes called -->
+.w3-sidebar{
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+}
+
+@media (min-width:993px){
+    .w3-modal-content{width:900px}
+    .w3-hide-large{display:none!important}
+    .w3-sidebar.w3-collapse{display:block!important}
+}
+
+@media (max-width:992px){
+    .w3-sidebar.w3-collapse{display:none}
+    .w3-main{margin-left:0!important;margin-right:0!important}
+    .w3-auto{max-width:100%}
+}
